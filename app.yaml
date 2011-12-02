@@ -1,0 +1,14 @@
+application: kleinekobe
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /images
+  static_dir: images
+
+- url: /sources
+  static_dir: sources
+
+- url: /.*
+  script: kleinekobe.py
